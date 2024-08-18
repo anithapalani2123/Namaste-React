@@ -1,3 +1,61 @@
-#parent{
-    color: aqua;
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    border: 1px solid;
+}
+.logo > img{
+    width: 130px;
+
+}
+.nav-items{
+    margin-right:10px;
+    margin-top: 20px;
+}
+.nav-items > ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+.nav-items > ul >li{
+    /* border: 1px solid; */
+    margin: 5px;
+    list-style-type: none;
+    font-size: 21px;
+}
+
+
+.res-card{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(245, 255, 253);
+    padding: 10px;
+    margin: 10px;
+    box-shadow:   5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.res-card:hover{
+    cursor: pointer;
+    box-shadow:   0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.res-card > img{
+    margin-left: 50px;
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid; */
+}
+.body{
+    /* border: 1px solid; */
+    margin: 5px 10px;
+    padding: 10px;
+}
+
+.search{
+    margin: 5px;
+}
+
+.Res-container{
+    display: flex;
+    flex-wrap: wrap;
 }

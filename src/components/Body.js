@@ -22,11 +22,9 @@ const Body = () => {
 
     }
 
-    if(data.length===0)
-    {
-        return <Shimmer/>
-    }
-    return(
+    
+    return(  data.length===0 ?
+        <Shimmer/>:
         <div className='body'>
             <button className='filter-restaurants' onClick={()=>{
                 const filteredData=data.filter((restaurant)=> restaurant.info.avgRating>4.5);
@@ -39,12 +37,10 @@ const Body = () => {
                         <ResCard key={restaurant.info.id} resData={restaurant}/>
                     )
                 }
-                
-                
-
             </div>
             
         </div>
+        
     )
 }
 

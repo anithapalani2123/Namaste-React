@@ -1,11 +1,16 @@
+
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 0px 10px;
-    border: 1px solid;
+    margin-bottom: 10px;
+    padding: 20px;
+    /* border: 1px solid; */
+    background-color: rgb(254, 246, 129);
 }
 .logo > img{
-    width: 130px;
+    width: 80px;
+    margin-top: 10px;
+
 
 }
 .nav-items{
@@ -30,8 +35,10 @@
 }
 
 .res-card{
-    width: 400px;
-    height: 500px;
+    /* width: 400px;
+    height: 500px; */
+    display: flex;
+    flex-direction: column;
     background-color: #f0f0f0;
     padding: 10px;
     margin: 10px;
@@ -43,15 +50,23 @@
 }
 
 .res-card > img{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     width: 300px;
-    height: 250px;
+    height: 300px;
     /* border: 1px solid; */
+}
+
+.cardsDesc{
+    width: 300px;
 }
 .body{
     /* border: 1px solid; */
-    margin: 5px 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 20px;
+    background: linear-gradient(to bottom,rgb(227, 195, 185),rgb(254, 246, 129));
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
@@ -59,6 +74,8 @@
 .Res-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .Shimmer-container{

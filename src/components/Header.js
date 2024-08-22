@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import logo from '../utils/logo.png'
 import { LOGO_URL } from "../utils/constants";
 const Header = () =>{
     const [loginBtn,setLoginBtn]=useState("Login");
@@ -7,7 +8,7 @@ const Header = () =>{
     return(
         <div className='header'>
             <div className='logo'>
-                <img src={LOGO_URL} alt='logo'/>
+                <img src={logo} alt='logo'/>
             </div>
             <div className='nav-items'>
                 <ul>

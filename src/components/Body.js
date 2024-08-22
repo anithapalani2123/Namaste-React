@@ -30,7 +30,9 @@ const Body = () => {
     const searchRestaurtant = () => {
         const filteredRestaurant=data.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
 
+        
         setFilteredData(filteredRestaurant);
+        
     }
 
     
@@ -40,7 +42,7 @@ const Body = () => {
             <div className="filters">
                 <button className='button' onClick={()=>{
                     const filData=data.filter((restaurant)=> restaurant.info.avgRating>4.5);
-                    setData(filData);
+                    setFilteredData(filData);
 
                 }}>Top Rated Restaurants</button>
                 <div className="search">
@@ -52,11 +54,14 @@ const Body = () => {
             
             
             <div className='Res-container'>
-                {
+                {filteredData.length===0 ?
+                ( <h1>No results found</h1> ) :
+                (
                     filteredData.map((restaurant)=> 
                         <ResCard key={restaurant.info.id} resData={restaurant}/>
                     )
-                }
+                )     
+            }
             </div>
             
         </div>

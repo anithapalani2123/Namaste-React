@@ -25,6 +25,9 @@
     font-size: 21px;
 }
 
+.Login{
+    padding: 0px 20px;
+}
 
 .res-card{
     width: 400px;
@@ -70,5 +73,5 @@
     background-color: #f0f0f0;
     padding: 10px;
     margin: 10px;
-    box-shadow:   5px 5px 3px rgba(0, 0, 0, 0.2);
+    /* box-shadow:   5px 5px 3px rgba(0, 0, 0, 0.2); */
 }
